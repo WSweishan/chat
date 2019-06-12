@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+    <!--配置连接池mysql-->
+    <named-config name="mysql">
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://127.0.0.1:3306/chat?characterEncoding=utf8&amp;useSSL=false</property>
+        <property name="user">weishan</property>
+        <property name="password">weishan</property>
+        <!-- 初始化连接数 -->
+        <property name="initialPoolSize">10</property>
+        <!--最大空闲时间,多少秒内未使用则连接被丢弃。若为0则永不丢弃。Default: 0 -->
+        <property name="maxIdleTime">100000</property>
+        <!--连接池中保留的最大连接数。Default: 15 -->
+        <property name="maxPoolSize">50</property>
+        <!-- 最小连接数 -->
+        <property name="minPoolSize">10</property>
+    </named-config>
+
+</c3p0-config>
